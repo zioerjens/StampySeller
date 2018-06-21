@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StampySeller</string>
+    <string name="newCode">Generate new code</string>
+    <string name="scanCode">Scan a vaucher</string>
+</resources>
