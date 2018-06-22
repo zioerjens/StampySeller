@@ -6,23 +6,78 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Home">
-    <Button
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:id="@+id/btnGenerate"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGenerateCode"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center"
+            android:text="@string/newCode"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAmount"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center"
+            android:text="1"
+            android:textSize="35dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCoffee"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center"
+            android:text="@string/coffee"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <!--<Button
         android:id="@+id/btnGenerate"
         android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:background="@color/colorPrimary"
-        android:layout_margin="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
         android:text="@string/newCode"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:textColor="@color/textColor">
+    </Button>-->
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
         android:layout_gravity="center">
-    </Button>
+    </SeekBar>
+    <ImageView
+        android:id="@+id/qrCode"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:background="@color/colorLightGray"
+        />
     <Button
         android:id="@+id/btnScan"
         android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_height="50dp"
         android:background="@color/colorPrimary"
         android:layout_margin="4dp"
         android:text="@string/scanCode"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:textColor="@color/textColor">
     </Button>
     <!--<Button
         android:id="@+id/btnLogout"
@@ -33,4 +88,10 @@
         android:text="@string/logout"
         android:layout_gravity="center">
     </Button>-->
+    <ProgressBar
+        android:id="@+id/indeterminateBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
 </LinearLayout>

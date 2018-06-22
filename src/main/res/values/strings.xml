@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">StampySeller</string>
-    <string name="newCode">Generate new code</string>
-    <string name="scanCode">Scan a vaucher</string>
+    <string name="newCode">GENERATE NEW CODE FOR</string>
+    <string name="coffee">COFFEE</string>
+    <string name="coffees">COFFEES</string>
+    <string name="scanCode">Scan a voucher</string>
+    <string name="scanCanceled">Scan was canceled</string>
+    <string name="voucherInvalid">This voucher is not valid</string>
+    <string name="voucherValid">This voucher is valid</string>
 </resources>
