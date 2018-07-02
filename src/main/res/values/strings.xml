@@ -7,4 +7,5 @@
     <string name="scanCanceled">Scan was canceled</string>
     <string name="voucherInvalid">This voucher is not valid</string>
     <string name="voucherValid">This voucher is valid</string>
+    <string name="no_internet_connectivity">You are not connected to the internet.\nPlease set up a new connection.</string>
 </resources>

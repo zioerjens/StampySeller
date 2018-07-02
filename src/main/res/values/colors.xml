@@ -6,4 +6,6 @@
     <color name="colorLightGray">#DDDDDD</color>
     <color name="transparent">#00000000</color>
     <color name="textColor">#FFFFFF</color>
+    <color name="white">#AAAAAA</color>
+    <color name="transparentDarker">#99000000</color>
 </resources>

@@ -52,6 +52,8 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        CheckForInternet cfi = new CheckForInternet(this);
+        cfi.execute();
     }
 
     @Override
@@ -200,7 +202,7 @@ public class Home extends AppCompatActivity {
         dialog.setCancelable(false);
         dialog.show();
 
-        new CountDownTimer(5000, 1000) { // 5000 = 5 sec
+        new CountDownTimer(3000, 1000) { // 5000 = 5 sec
 
             public void onTick(long millisUntilFinished) {}
 
